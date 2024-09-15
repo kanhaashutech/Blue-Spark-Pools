@@ -3408,7 +3408,7 @@ input:focus-visible {
 .nav{
   position: sticky !important;
   top: 24px;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
   .nav .nav-links  {
     /* display:none; */
@@ -3422,7 +3422,7 @@ input:focus-visible {
   }
 
   .nav i#cross,i#bars{
-    font-size: 1.7rem; 
+    font-size: 2.2rem; 
 }
 
   .menu-bar{
@@ -3483,9 +3483,11 @@ input:focus-visible {
 .hero-section .img-div video{
   display: block;
   position: absolute;
-  height: 80px;
-  right: 5%;
+  height: 94px;
+  right: 1%;
+  top: -3%;
   z-index: 1;
+  border-radius: 30px;
 }
 .hero-txt {
   gap: 7rem;
@@ -3500,7 +3502,7 @@ input:focus-visible {
   transform: translateX(-50%,-50%);
 }
 .hero-txt .main-heading h1 {
-  font-size:22px;
+  font-size:24px;
 }
 
 
@@ -3522,12 +3524,12 @@ input:focus-visible {
 }
 
 .sub-heading img {
-  height: 10rem;
+  height: 10.5rem;
 }
 
 .sub-heading button {
-  width: 120px;
-  height: 35px;
+  width: 130px;
+  height: 40px;
   border-radius: 5px;
   font-size: 11px;
   font-weight: 700;
@@ -3562,13 +3564,13 @@ input:focus-visible {
   }
   .why-cards_container .w-card {
     width: 65% !important;
-    height: 240px;
+    height: 260px;
     border-radius: 5px !important;
   }
   .w-card:before {
     content: "";
     position: absolute;
-    height: 250px;
+    height: 260px;
     width: 100%;
     top: 0;
     left: 0;
@@ -3586,6 +3588,7 @@ input:focus-visible {
   }
   .why-cards_container .w-card h3 {
     font-size: 13px !important;
+    text-align: center;
   }
 
 /*  */
@@ -3625,7 +3628,7 @@ input:focus-visible {
     /* flex-wrap: wrap; */
   }
   .abt-container .about_svg img {
-    height: 20rem !important;
+    height: 23rem !important;
   }
 
   .about .about-txt #abt-pool-icon {
@@ -3636,10 +3639,11 @@ input:focus-visible {
   }
 
   .abt-container .about-txt h3 {
-    font-size: 15px !important;
+    font-size: 14px !important;
     margin-top: 10px !important;
     padding-right: 0rem !important;
     font-weight: 500;
+    line-height: 120%;
     text-align: center;
   }
   
@@ -3673,10 +3677,10 @@ input:focus-visible {
   }
 @keyframes service2 {
   from {
-    transform: translateX(4px);
+    transform: translateX(0px);
   }
   to {
-    transform: translateX(-10px);
+    transform: translateX(-6px);
   }
 }
   .service-container .service-box {
@@ -3707,11 +3711,11 @@ input:focus-visible {
   }
 
   .service-box .ser-txt h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .service-box .ser-txt p {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
 
@@ -3839,15 +3843,15 @@ input:focus-visible {
   padding: 1.5rem 0rem;
 }
 .g-head h1 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 800;
   line-height: 120%; 
   letter-spacing: 3px;
-  margin-left: 1rem ;
+  margin-left: 2rem ;
 }
 
 .g-head  img {
-  height: 65px;
+  height: 85px;
   position: absolute;
   top: 6px;
 }
@@ -3914,13 +3918,13 @@ input:focus-visible {
 
 
 .video-pin .g-side a {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   margin-right: 0rem;
   margin-left: 3rem;
   margin-top: 1.2rem;
   border-radius: 4px;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.5rem;
 }
 
 
@@ -4081,11 +4085,11 @@ input:focus-visible {
   height: 70px;
 }
 .f-logo h2 {
-  font-size: 19px;
+  font-size: 20px;
 }
 .f-logo p {
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
   font-style: italic;
 }
 

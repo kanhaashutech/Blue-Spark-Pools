@@ -88,8 +88,8 @@ body {
   max-width: 1530px;
   min-height: 300vh;
   background-color: #fff;
-  overflow: hidden;
-  /* overflow: clip; */
+  /* overflow: hidden; */
+  overflow: clip;
   margin: auto; 
   /* display: flex;
   flex-direction: column;
@@ -3403,7 +3403,8 @@ input:focus-visible {
   
 .main{
   
-  overflow: hidden;
+  overflow: clip;
+  /* overflow: hidden; */
 }
 
    

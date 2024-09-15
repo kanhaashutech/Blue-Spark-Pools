@@ -3400,7 +3400,7 @@ input:focus-visible {
 /* for all */
 
 @media screen and (max-width :550px) {
-  
+
 .main{
   
   overflow: clip;
@@ -3551,6 +3551,7 @@ input:focus-visible {
     min-height: 400px !important;
     width: 100%;
     padding: 2rem  1.2rem !important;
+    overflow: hidden;
   }
   .why-head h1 {
     font-size: 22px !important;
@@ -3608,6 +3609,7 @@ input:focus-visible {
     padding: 2rem 1rem !important;
     margin-top: 5rem !important;
     background-color: #968888 !important;
+    overflow: hidden;
   }
   .about::before {
     top: 0px;
@@ -3658,6 +3660,7 @@ input:focus-visible {
   .service_heading {
     padding: 2rem 0 !important;
     gap: 1.2rem;
+    overflow: hidden;
   }
   .service_heading h2 {
     font-size: 24px;
@@ -3733,6 +3736,7 @@ input:focus-visible {
  .product-section {
   min-height: 450px;
   margin-top: 2rem;
+  overflow: hidden;
 }
 
 
@@ -3844,6 +3848,7 @@ input:focus-visible {
 /* ------------- rESponsive Gallery section starts */
 
 .gallery-section {
+  overflow: hidden;
 }
 .g-head {
   padding: 1.5rem 0rem;
@@ -3948,6 +3953,7 @@ input:focus-visible {
 
 .contact-section {
   padding: 4rem 1rem;
+  overflow: hidden;
 }
 
 .contact-section h1 {
@@ -4043,33 +4049,51 @@ input:focus-visible {
 }
 
 
+
+
+.f-svg img.wave-front-svg {
+  margin-left: -6rem;
+  animation: wave1 2s linear infinite ;
+}
+
+
 @keyframes wave1 {
   from {
-    transform: translateX(-100px);
+    transform: translateX(10px);
   }
 
   to {
-    transform: translateX(0px);
+    transform: translateX(60px);
   }
+
 }
 
 .f-svg img.wave-back-svg {
-  margin-left: -6rem;
-  animation: wave2 1.2s linear infinite alternate;
+  margin-left: -1rem;
+  animation: wave2 1s linear infinite ;
 }
 
 @keyframes wave2 {
   from {
-    transform: translateX(0px);
+    transform: translateX(-80px);
   }
   to {
-    transform: translateX(30px);
+    transform: translateX(10px);
   }
 }
+
+
+
+
+
+
+
+
 
 .footer {
   background: linear-gradient(183deg, #00adfe 14.65%, #0274aa 80.45%);
   padding: 1rem 0;
+  overflow: hidden;
 }
 
 .f-container {

@@ -358,6 +358,7 @@ bars.addEventListener('click', () => {
 })
 
 cross.addEventListener('click', () => {
+    // menuBar.style.opacity = "none";
     menuBar.style.transform = " translateX(120%)";
     cross.style.display = "none";
     bars.style.display = "block";

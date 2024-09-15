@@ -39,7 +39,6 @@
 
     <div class="main">
 
-<!-- purani -->
         <!-- navbar -->
         <div class="nav">
 
@@ -57,7 +56,7 @@
             <i class="fa-solid fa-x" id="cross"></i>
            
             <!-- nav - links -->
-            <div class="nav-links menu-bar">
+            <div class="nav-links menu-bar" id="menu-bar">
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About Us</a>
                 <a href="index.html#services">Services</a>
@@ -77,7 +76,6 @@
             </div>
 
         </div>
-<!-- purani -->
 
 
         <!-- Products section Starts -->
@@ -1021,15 +1019,19 @@
 
                 <div class="c-form">
 
-                    <form action="">
-                        <input type="text" name="Name" required placeholder="Name*">
-                        <input type="tel" name="Mobile" required placeholder="Mobile No.*">
-                        <textarea name="Message" id="" A placeholder="Your Message..."></textarea>
-
-                        <button type="submit">Submit</button>
+                    <form action="" name="submit-to-google-sheet" onsubmit="sendEmail(); reset(); return false;">
+          
+                      <input type="text" name="Name" required placeholder="Name*">
+          
+                      <input type="tel" name="Mobile" required placeholder="Mobile No.*">
+          
+                      <textarea name="Message" id="" A placeholder="Your Message..."></textarea>
+          
+                      <button type="submit" name="Submit">Submit</button>
+                      <span id="success"></span>
                     </form>
-
-                </div>
+          
+                  </div>
 
             </div>
 
@@ -1120,6 +1122,29 @@
 
 
     <!-- Scripts -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_Zxrx6oRP86Ex-7_2jslWQAYiq60q8X92si2oVwGaZ2oi8aMdUgIA3My7ETNeFT1_/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const success = document.getElementById('success');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>  {
+               success.innerHTML="Data Successfully Submitted";
+      
+               setTimeout(function()
+               {
+                success.innerHTML=" ";
+               },3000)
+               form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

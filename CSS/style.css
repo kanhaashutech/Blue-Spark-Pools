@@ -1048,6 +1048,28 @@ input:focus-visible {
   transform: scale(1.1);
   color: #fff;
 }
+
+#success{
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  */
 
 
@@ -1276,8 +1298,6 @@ input:focus-visible {
   font-weight: 700;
 }
 
-
-
 .nav{
   position: sticky !important;
 }
@@ -1285,7 +1305,6 @@ input:focus-visible {
 .nav i{
   display: none;
 }
-
 
 
 
@@ -3378,25 +3397,6 @@ input:focus-visible {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* for all */
 
 @media screen and (max-width :550px) {
@@ -4163,13 +4163,6 @@ input:focus-visible {
 
 
 
-
-
-
-
-
-
-
 /* for nav and hero only */
 @media screen and (min-width: 400px) and (max-width: 460px) {
   
@@ -4266,8 +4259,6 @@ input:focus-visible {
  
 
 }
-
-
 
 
 

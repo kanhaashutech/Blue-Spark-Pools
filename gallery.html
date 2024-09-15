@@ -10,7 +10,8 @@
 
     <!-- boxicon -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+ <!-- remix icon -->
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- google fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,15 +52,18 @@
                     <h2>BLUE SPARK <span class="logo-span">POOLS</span></h2>
                 </a>
             </div>
-
+            
+            <i class="ri-menu-4-fill" id="bars"></i>
+            <i class="fa-solid fa-x" id="cross"></i>
+           
             <!-- nav - links -->
-            <div class="nav-links">
+            <div class="nav-links menu-bar" id="menu-bar">
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About Us</a>
                 <a href="index.html#services">Services</a>
                 <a href="products.html">Products</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html#contact">Contact</a>
                 <a href="tel:+919340090487" class="call-nav"><svg xmlns="http://www.w3.org/2000/svg" width="28"
                         height="28" viewBox="0 0 28 28" fill="none">
                         <path
@@ -126,15 +130,19 @@
 
                 <div class="c-form">
 
-                    <form action="">
-                        <input type="text" name="Name" required placeholder="Name*">
-                        <input type="tel" name="Mobile" required placeholder="Mobile No.*">
-                        <textarea name="Message" id="" A placeholder="Your Message..."></textarea>
-
-                        <button type="submit">Submit</button>
+                    <form action="" name="submit-to-google-sheet" onsubmit="sendEmail(); reset(); return false;">
+          
+                      <input type="text" name="Name" required placeholder="Name*">
+          
+                      <input type="tel" name="Mobile" required placeholder="Mobile No.*">
+          
+                      <textarea name="Message" id="" A placeholder="Your Message..."></textarea>
+          
+                      <button type="submit" name="Submit">Submit</button>
+                      <span id="success"></span>
                     </form>
-
-                </div>
+          
+                  </div>
 
             </div>
 
@@ -225,6 +233,27 @@
 
 
     <!-- Scripts -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_Zxrx6oRP86Ex-7_2jslWQAYiq60q8X92si2oVwGaZ2oi8aMdUgIA3My7ETNeFT1_/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const success = document.getElementById('success');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>  {
+               success.innerHTML="Data Successfully Submitted";
+      
+               setTimeout(function()
+               {
+                success.innerHTML=" ";
+               },3000)
+               form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
      <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -239,7 +268,9 @@
 
     <!-- boxicon -->
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-
+ 
+ <!-- fontawesome kit -->
+ <script src="https://kit.fontawesome.com/415dea71ad.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

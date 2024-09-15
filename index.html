@@ -674,12 +674,16 @@
 
         <div class="c-form">
 
-          <form action="">
+          <form action="" name="submit-to-google-sheet" onsubmit="sendEmail(); reset(); return false;">
+
             <input type="text" name="Name" required placeholder="Name*">
+
             <input type="tel" name="Mobile" required placeholder="Mobile No.*">
+
             <textarea name="Message" id="" A placeholder="Your Message..."></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" name="Submit">Submit</button>
+            <span id="success"></span>
           </form>
 
         </div>
@@ -769,6 +773,28 @@
 
 
   </div>
+
+  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx_Zxrx6oRP86Ex-7_2jslWQAYiq60q8X92si2oVwGaZ2oi8aMdUgIA3My7ETNeFT1_/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const success = document.getElementById('success');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>  {
+         success.innerHTML="Data Successfully Submitted";
+
+         setTimeout(function()
+         {
+          success.innerHTML=" ";
+         },3000)
+         form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 
   <!-- Scripts -->

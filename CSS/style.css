@@ -89,7 +89,7 @@ body {
   min-height: 300vh;
   background-color: #fff;
   /* overflow: hidden; */
-  overflow: clip;
+  /* overflow: clip; */
   margin: auto; 
   /* display: flex;
   flex-direction: column;
@@ -3474,6 +3474,7 @@ input:focus-visible {
   margin-top: 1rem;
   margin-bottom: 8rem;
   min-height: 530px;
+  overflow: hidden;
 }
 .hero-section .img-div img.hero-img {
   height: 210px;

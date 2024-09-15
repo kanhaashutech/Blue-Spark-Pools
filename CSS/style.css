@@ -3401,7 +3401,10 @@ input:focus-visible {
 
 @media screen and (max-width :550px) {
   
-
+.main{
+  
+  overflow: hidden;
+}
 
    
  /* navbar */

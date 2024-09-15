@@ -4078,7 +4078,7 @@ input:focus-visible {
     transform: translateX(-80px);
   }
   to {
-    transform: translateX(10px);
+    transform: translateX(00px);
   }
 }
 

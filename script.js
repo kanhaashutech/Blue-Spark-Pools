@@ -332,10 +332,38 @@ gsap.from(".contact-section .c-box .c-form",{
 
 
 
+// menubar
 
+let bars = document.getElementById('bars');
+let cross = document.getElementById('cross');
+let menuBar = document.getElementById('menu-bar');
+let navLinks = document.querySelector(".nav-links")
 
+bars.addEventListener('click', () => {
 
+   
+    bars.style.display = "none";
+    cross.style.display = "block";
+    menuBar.classList.add("menu-bar");
+    menuBar.style.transform = " translateX(0)";
+    
+    menuBar.style.display = "flex";
 
+    // not used
+    // menuBar.classList.remove("nav-links");
+    // navLinks.style.display = "block";
+    // not used
+    
+    console.log("radhe radhe ");
+})
+
+cross.addEventListener('click', () => {
+    menuBar.style.transform = " translateX(120%)";
+    cross.style.display = "none";
+    bars.style.display = "block";
+
+    console.log("radhe radhe ");
+})
 
 
 

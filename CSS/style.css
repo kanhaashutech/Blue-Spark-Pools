@@ -3564,13 +3564,13 @@ input:focus-visible {
   }
   .why-cards_container .w-card {
     width: 65% !important;
-    height: 260px;
+    height: 270px;
     border-radius: 5px !important;
   }
   .w-card:before {
     content: "";
     position: absolute;
-    height: 260px;
+    height: 270px;
     width: 100%;
     top: 0;
     left: 0;
@@ -3588,7 +3588,8 @@ input:focus-visible {
   }
   .why-cards_container .w-card h3 {
     font-size: 13px !important;
-    text-align: center;
+    text-align: center !important;
+    width: 100%;
   }
 
 /*  */
@@ -3961,7 +3962,7 @@ input:focus-visible {
 }
 
 .c-box .c-img img {
-  /* height: 290px; */
+  height: auto;
   width: 95%;
 }
 .c-box .c-form{

@@ -89,7 +89,7 @@ body {
   min-height: 300vh;
   background-color: #fff;
   /* overflow: hidden; */
-  /* overflow: clip; */
+  overflow: clip;
   margin: auto; 
   /* display: flex;
   flex-direction: column;

@@ -4052,24 +4052,24 @@ input:focus-visible {
 
 
 .f-svg img.wave-front-svg {
-  margin-left: -6rem;
-  animation: wave1 2s linear infinite ;
+  margin-left: -5rem;
+  animation: wave1 1s linear infinite ;
 }
 
 
 @keyframes wave1 {
   from {
-    transform: translateX(10px);
+    transform: translateX(-2rem);
   }
 
   to {
-    transform: translateX(60px);
+    transform: translateX(50px);
   }
 
 }
 
 .f-svg img.wave-back-svg {
-  margin-left: -1rem;
+  margin-left: -4rem;
   animation: wave2 1s linear infinite ;
 }
 
@@ -4078,7 +4078,7 @@ input:focus-visible {
     transform: translateX(-80px);
   }
   to {
-    transform: translateX(00px);
+    transform: translateX(30px);
   }
 }
 

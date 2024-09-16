@@ -1306,7 +1306,9 @@ input:focus-visible {
   display: none;
 }
 
-
+.mobile-wave{
+  display: none;
+}
 
 /*-------------------*\
     Responsive Code  
@@ -4041,18 +4043,20 @@ input:focus-visible {
 /*  */
 .f-svg {
   width: 100%;
-  height: 35px;
+  height: 30px;
 }
 .f-svg img {
   top: 0;
   height: 40px;
+  left: 0;
 }
 
 
 
 
 .f-svg img.wave-front-svg {
-  margin-left: -5rem;
+  display: none;
+  margin-left: -3rem;
   animation: wave1 1s linear infinite ;
 }
 
@@ -4063,7 +4067,7 @@ input:focus-visible {
   }
 
   to {
-    transform: translateX(50px);
+    transform: translateX(3rem);
   }
 
 }
@@ -4071,6 +4075,12 @@ input:focus-visible {
 .f-svg img.wave-back-svg {
   margin-left: -4rem;
   animation: wave2 1s linear infinite ;
+  display: none;
+}
+.f-svg img.mobile-wave {
+  margin-left: -4rem;
+  animation: wave2 1s linear infinite ;
+  display: block;
 }
 
 @keyframes wave2 {

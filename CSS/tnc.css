@@ -1,0 +1,67 @@
+*{
+margin: 0;
+padding: 0;
+  box-sizing: border-box;
+}
+
+.tnc{
+    text-align: center;
+    padding: 4rem 0rem;
+    width: 70%;
+    margin: auto;
+}
+.tnc h1{
+    color: rgb(0, 179, 214);
+}
+
+
+.tnc h6{
+    margin: 1rem 0;
+    font-weight: 500;
+}
+.tnc h5{
+    text-align: left;
+    margin-top: 1rem;
+}
+.tnc p{
+    font-size: 1.6rem;
+    text-align: left;
+    margin: .5rem 0;
+}
+
+
+
+@media screen and (max-width:550px) {
+
+    .tnc h1{
+        font-size: 3rem;
+    }
+    
+    .tnc h4{
+        font-size: 1.6rem;
+    }
+    .tnc h6{
+        font-size: 1.3rem;
+    }
+
+    .tnc{
+        padding: 4rem 0rem;
+        width: 90%;
+    }
+
+    .tnc h5{
+        text-align: left;
+        margin-top: .6rem;
+        font-size: 1.5rem;
+    }
+    .tnc p{
+        font-size: 1.3rem;
+        text-align: left;
+        margin: .5rem 0;
+    }
+}
+
+
+
+
+

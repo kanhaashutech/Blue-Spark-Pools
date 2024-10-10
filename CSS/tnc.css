@@ -4,6 +4,11 @@ padding: 0;
   box-sizing: border-box;
 }
 
+.main{
+        
+    min-height: auto;
+      }
+
 .tnc{
     text-align: center;
     padding: 4rem 0rem;

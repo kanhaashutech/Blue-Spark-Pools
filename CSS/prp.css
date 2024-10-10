@@ -4,6 +4,10 @@
       box-sizing: border-box;
     }
     
+    .main{
+        
+  min-height: auto;
+    }
     .prp{
         text-align: center;
         padding: 4rem 0rem;
